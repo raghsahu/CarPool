@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only Female"
+        android:id="@+id/checkBox"
+        android:button="@drawable/checkbox_selector"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/edittext_topmargin"
+        android:textColor="@color/colorPrimary" />
+
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/dividercolor"/>
+
+    <RadioGroup android:id="@+id/numbertype"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/edittext_topmargin"
+        android:padding="5dp">
+
+        <RadioButton android:id="@+id/all"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/all"
+            android:textColor="@color/colorPrimary"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobtn_selector"
+            android:drawablePadding="3dp"
+            android:checked="true"/>
+
+        <RadioButton android:id="@+id/odd"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/odd"
+            android:textColor="@color/colorPrimary"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobtn_selector"
+            android:drawablePadding="3dp"/>
+
+        <RadioButton android:id="@+id/even"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/even"
+            android:textColor="@color/colorPrimary"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobtn_selector"
+            android:drawablePadding="3dp"/>
+    </RadioGroup>
+
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/dividercolor"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/edittext_topmargin">
+
+        <TextView android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:text="Date:"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText android:id="@+id/seldt"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:hint="Select Date"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <ImageView android:id="@+id/ivclear"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/delicon"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <Button android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="@dimen/edittext_topmargin"
+        android:id="@+id/btnfilter"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn"
+        android:text="@string/filter"
+        android:textColor="@color/txtcolor"/>
+</LinearLayout>

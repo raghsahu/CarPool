@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vrowlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="2dp"
+    android:descendantFocusability="afterDescendants">
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <ImageView android:id="@+id/car"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:src="@drawable/offerride1"
+                android:padding="5dp"
+                android:gravity="center"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <TextView android:id="@+id/company"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textColor="@color/txtcolor"
+                android:textSize="18dp"
+                android:text="Company"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/model"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textColor="@color/txtcolor"
+                android:textSize="18dp"
+                android:text="Model"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/number"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textColor="@color/txtcolor"
+                android:textSize="18dp"
+                android:text="Number"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/seats"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:textColor="@color/txtcolor"
+                android:textSize="18dp"
+                android:text="Seats"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

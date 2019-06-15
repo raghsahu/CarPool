@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fortin.carpool.FindRide"
+    tools:showIn="@layout/activity_find_ride"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:padding="5dp">
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:orientation="vertical">
+
+                <ImageView android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/f1"
+                    android:gravity="center_vertical"/>
+                <ImageView android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/f2"
+                    android:layout_gravity="center_vertical"/>
+                <ImageView android:id="@+id/f3"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/f0"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:padding="1dp">
+
+                        <EditText android:id="@+id/etsource"
+                           android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Pickup Point"
+                            android:focusable="false"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:background="@android:color/transparent"
+                            android:padding="3dp"
+                            android:imeOptions="actionNext"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                <View android:layout_height="1dp"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:background="@color/white"/>
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:padding="1dp"
+                        android:layout_marginTop="@dimen/edittext_topmargin"
+                        android:layout_alignParentTop="true"
+                        android:layout_below="@+id/etsource">
+
+                        <EditText android:id="@+id/etdestination"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Drop point"
+                            android:focusable="false"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:padding="3dp"
+                            android:imeOptions="actionSearch"/>
+                    </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_height="match_parent"
+                android:padding="5dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content">
+
+                <ImageView android:id="@+id/btnfind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/findride"
+                    android:layout_below="@+id/view"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/listbackground"
+        android:padding="5dp">
+
+        <ListView android:id="@+id/lvgetride"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/dividercolor"
+            android:dividerHeight="1dp" />
+
+        <TextView android:id="@+id/tvmsg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="No Rides"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+
+        <ListView android:id="@+id/lvhistory"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/dividercolor"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

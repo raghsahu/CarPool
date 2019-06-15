@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Select Pickup Point:"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Spinner android:id="@+id/spnpick"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="2dp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Select Drop Point:"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Spinner android:id="@+id/spndrop"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="2dp"/>
+
+    <Button android:id="@+id/btnsel"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/btntxtcolor"
+        android:background="@color/colorPrimary"
+        android:text="Next"/>
+
+
+</LinearLayout>

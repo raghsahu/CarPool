@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="afterDescendants">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Depature Time"
+                android:textColor="@color/txtcolordark"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/deptime"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Time"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/pickuplinear"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Expected Time"
+                android:textColor="@color/txtcolordark"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/expectedtime"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Time"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Pickup-Drop"
+                android:textColor="@color/txtcolordark"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/pickup"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Pickup"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <!--<TextView android:id="@+id/drop"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:drawableLeft="@drawable/desticon"-->
+            <!--android:text="Drop"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/black"/>-->
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Selected Seats"
+                android:textColor="@color/txtcolordark"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/seat"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Seat"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Request Sending Time"
+                android:textColor="@color/txtcolordark"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/senttime"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Send Time"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/cmt"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Comment"
+            android:gravity="center_vertical"
+            android:textColor="@color/txtcolordark"/>
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/status"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="@dimen/textview_margin"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="center"/>
+
+            <TextView android:id="@+id/cancel"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textSize="@dimen/textview_margin"
+                android:background="@drawable/side_nav_bar"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!--<ImageView android:id="@+id/cancel"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:src="@drawable/reject"-->
+            <!--android:layout_marginRight="5dp"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

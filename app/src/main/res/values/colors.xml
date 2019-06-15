@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorlight">#ef9783</color>
+    <color name="colorPrimary">#f04e25</color>
+    <color name="colorPrimaryDark">#d84621</color>
+    <color name="colorAccent">#f15f3a</color>
+    <color name="colorPrimaryMedium">#f15f3a</color>
+    <color name="colorDark">#d84621</color>
+    <color name="colorrs">#DD4B39</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="dividercolor">#80ef9783</color>
+    <color name="light_grey">#cccccc</color>
+    <color name="txtcolor">#ffffff</color>
+    <color name="txtcolordark">#000000</color>
+    <color name="btntxtcolor">#ffffff</color>
+    <color name="radioselected">#80ef9783</color>
+    <color name="linkcolor">#2132be</color>
+    <color name="postBg">#E0E0E0</color>
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historylinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:descendantFocusability="afterDescendants">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <TextView android:id="@+id/txtstatus"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:textColor="@color/red_btn_bg_color"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp">
+
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/tvsource"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Source"
+                android:textColor="@color/txtcolordark"
+                android:padding="2dp"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/tvdestination"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/txtcolordark"
+                android:text="Destination"
+                android:padding="2dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:text="Routes"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/routes"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/txtcolordark"
+                android:text="Routes"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Depature Time"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/tvdestime"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Time"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/linearret"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Return Time"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/tvreturntime"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Time"
+                android:gravity="center_vertical"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Vehicle"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/tvcarnm"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Vehicle Name"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/txtcolordark"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Rate"
+                android:gravity="center_vertical"/>
+
+            <TextView android:id="@+id/tvrate"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/rate"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorrs"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearstatus"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="2dp">
+
+        <TextView android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:text="@string/ridestatus"
+            android:textColor="@color/txtcolordark"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"/>
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:id="@+id/yes"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/complete"
+                android:textColor="@color/txtcolor"
+                android:gravity="center"
+                android:background="@color/red_btn_bg_color"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"/>
+            <View android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/white"/>
+
+            <TextView android:id="@+id/no"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/cancelled"
+                android:textColor="@color/txtcolor"
+                android:background="@color/red_btn_bg_color"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:textSize="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/light_grey"/>
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fortin.carpool.VehicleRegistration"
+    tools:showIn="@layout/activity_vehicle_registration"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:background="@drawable/side_nav_bar"
+           >
+
+            <LinearLayout  android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+               >
+
+                <ImageView android:id="@+id/ivcar"
+                   android:layout_height="150dp"
+                    android:layout_width="150dp"
+                    android:src="@drawable/offerride1"
+                    android:gravity="top|center"
+                    />
+            </LinearLayout>
+
+            <TextView android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:text="Select Vehicle Photo:"
+                android:textSize="@dimen/textview_margin"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <View android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/dividercolor"/>
+        <ScrollView android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="3dp">
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="@dimen/edittext_height"
+                        android:layout_width="match_parent">
+
+                        <Spinner android:id="@+id/etcompany"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Car Company Name"
+                            android:inputType="textCapWords"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:background="@drawable/middle_text"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dividercolor"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="@dimen/edittext_height"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/edittext_topmargin">
+
+                        <EditText android:id="@+id/etmodel"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Car Model Name"
+                            android:background="@drawable/middle_text"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:maxLines="1"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dividercolor"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="@dimen/edittext_height"
+                        android:layout_marginTop="@dimen/edittext_topmargin"
+                        android:layout_width="match_parent">
+
+                        <EditText android:id="@+id/etnum"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Car Number"
+                            android:inputType="textCapCharacters"
+                            android:background="@drawable/middle_text"
+                            android:textColor="@color/colorPrimary"
+                            android:maxLines="1"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dividercolor"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_height="@dimen/edittext_height"
+                        android:layout_marginTop="@dimen/edittext_topmargin"
+                        android:layout_width="match_parent">
+
+                        <EditText android:id="@+id/etseat"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:hint="Seats"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:background="@drawable/middle_text"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/colorPrimary"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/dividercolor"/>
+
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Select Type:"
+                        android:padding="2dp"
+                        android:textSize="@dimen/textview_margin"
+                        android:textColor="@color/txtcolordark"/>
+
+                    <RadioGroup android:id="@+id/rgtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:id="@+id/rb1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:text="@string/petrol"
+                            android:checked="true"
+                            android:textSize="@dimen/textview_margin"
+                            android:textAlignment="center"
+                            android:drawableTop="@drawable/petrol"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:background="@color/radioselected"/>
+
+                        <RadioButton android:id="@+id/rb2"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:text="@string/diesel"
+                            android:textSize="@dimen/textview_margin"
+                            android:textAlignment="center"
+                            android:drawableTop="@drawable/diesel"
+                            android:button="@null"
+                            android:gravity="center" />
+
+                        <RadioButton android:id="@+id/rb3"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:text="@string/cng"
+                            android:textSize="@dimen/textview_margin"
+                            android:textAlignment="center"
+                            android:drawableTop="@drawable/cng"
+                            android:button="@null"
+                            android:gravity="center" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/savelinear"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <Button android:id="@+id/btnsubmit"
+                        android:layout_height="50dp"
+                        android:layout_width="match_parent"
+                        android:text="@string/save"
+                        android:textSize="@dimen/textview_margin"
+                        android:textColor="@color/btntxtcolor"
+                        android:background="@drawable/btn"
+                        android:layout_marginTop="@dimen/edittext_topmargin"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/updatelinear"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal">
+                    <Button android:id="@+id/btnupdate"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/update"
+                        android:textSize="@dimen/textview_margin"
+                        android:textColor="@color/btntxtcolor"
+                        android:background="@color/colorlight"
+                        android:layout_marginTop="@dimen/edittext_topmargin"/>
+                    <Button android:id="@+id/btndelete"
+                        android:layout_height="50dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/delete"
+                        android:textSize="@dimen/textview_margin"
+                        android:textColor="@color/btntxtcolor"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="@dimen/edittext_topmargin"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

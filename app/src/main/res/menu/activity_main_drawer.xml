@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/searchride"
+            android:title="Feed" />
+        <item
+            android:id="@+id/nav_vehicle"
+            android:icon="@drawable/myvehicle"
+            android:title="My Vehichle" />
+        <item
+            android:id="@+id/nav_offerride"
+            android:icon="@drawable/offerride1"
+            android:title="Offer Ride" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_myrides"
+                android:icon="@drawable/myrides"
+                android:title="My Rides" />
+            <item
+                android:id="@+id/nav_myrequests"
+                android:icon="@drawable/requests"
+                android:title="Requests Sent" />
+
+            <item
+                android:id="@+id/nav_requestreceived"
+                android:icon="@drawable/requests"
+                android:title="Requests Received" />
+
+            <item
+                android:id="@+id/nav_mymessages"
+                android:icon="@drawable/notification"
+                android:title="Notifications" />
+        </menu>
+    </item>
+
+    <item android:title="Extra">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share App" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+
+
+        </menu>
+    </item>
+
+</menu>

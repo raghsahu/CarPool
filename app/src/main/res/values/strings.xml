@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Fortin CarPool</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="save">Save</string>
+    <string name="confirm">Confirm</string>
+    <string name="signup">Signup Here</string>
+    <string name="forgot"><u>Forgot Password</u></string>
+    <string name="verify">Login with Number</string>
+    <string name="facebook_app_id">962353660516829</string>
+    <string name="alright">Alright</string>
+    <string name="cancel">Cancel</string>
+    <string name="otpdetail">We will send you one time password for varification on given Mobile number.</string>
+    <string name="otp">One Time Password (OTP)</string>
+    <string name="otpalert">Please enter valid OTP</string>
+    <string name="otpconfirm">We have sent an activation code via SMS to your mobile.</string>
+
+    <string name="ServerError">Please check your internet connection</string>
+    <string name="servererror">There is something wrong with server. Please try later!</string>
+    <string name="label_error_incorrect_phone">Incorrect phone</string>
+    <string name="nointdesc">No Internet Connection. Please Enable your internet on phone</string>
+    <string name="noint">No Internet Connection</string>
+
+    <string name="checkmap"><u>Map Route View</u></string>
+
+    <string name="route"><b>Routes : </b></string>
+    <string name="ratedesc">(Per Seat)</string>
+    <string name="ratekm">(Per km)</string>
+    <string name="rate">Rate</string>
+    <string name="rateperkm">Rate(Per km)</string>
+    <string name="ac">AC</string>
+    <string name="noac">No AC</string>
+    <string name="smoking">Smoking</string>
+    <string name="nosmoking">No Smoking</string>
+    <string name="link"><u>View Member Detail</u></string>
+    <string name="petrol">Petrol</string>
+    <string name="diesel">Diesel</string>
+    <string name="cng">CNG</string>
+    <string name="oneway">One Way</string>
+    <string name="logout">Logout</string>
+
+    <string name="title_activity_user_registration">Edit Profile</string>
+    <string name="title_activity_vehicle_registration">Vehicle Detail</string>
+    <string name="title_activity_ride_detail">Ride Detail</string>
+    <string name="title_activity_send_request">Send Request</string>
+    <string name="title_activity_request_notification">Message Notification</string>
+    <string name="title_activity_rides_history">My Rides</string>
+    <string name="title_activity_find_ride">Search Ride</string>
+    <string name="title_activity_user_profile">Profile</string>
+    <string name="title_activity_offerride">Offer Ride</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_send_request_history">My Requests</string>
+    <string name="title_activity_member_detail">Member Detail</string>
+    <string name="title_activity_my_vehicles">My Vehicles</string>
+
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="filter">Filter</string>
+
+    <string name="phone">phone</string>
+    <string name="country">country</string>
+    <string name="mobile">mobile</string>
+    <string name="model">Model: </string>
+    <string name="fbfriends">Facebook Friends:</string>
+    <string name="both">both</string>
+    <string name="male">Male</string>
+    <string name="female">female</string>
+    <string name="seats">" Seats"</string>
+
+    <string name="selpicture">Select Picture</string>
+    <string name="selroute">Select Route</string>
+    <string name="seldepture">Select Depture Time</string>
+    <string name="selreturn">Select Return Time</string>
+    <string name="selvehicle">Select Vehicle</string>
+
+    <string name="roundtrip">Round Trip</string>
+    <string name="tripdirection">Trip Direction Route:</string>
+    <string name="returntripdirection">Return Trip Direction Route:</string>
+    <string name="postridesuccess">Ride Post Successfully...</string>
+    <string name="dateerrormsg">Please Confirm! Return DateTime is After Depature DateTime</string>
+    <string name="emptyridemsg">Please Fill Ride Detail...</string>
+    <string name="minseatmsg">You Can enter minimum 1 Seat</string>
+    <string name="depaturerror">Select Depature DateTime</string>
+    <string name="selcarerror">Please Select Vehicle...</string>
+    <string name="vehiclealert">Your Vehicle is not register.First Register your vehicle for Post Ride</string>
+    <string name="addrouterror">You are not added more than 3 routes.</string>
+    <string name="regmsg">Profile Edit Successfully Done...</string>
+    <string name="bothmsg">Male / Female Both Allow</string>
+    <string name="malemsg">Allow Only Male</string>
+    <string name="femalemsg">Allow Only Female</string>
+    <string name="odd">Odd</string>
+    <string name="even">Even</string>
+    <string name="all">All</string>
+    <string name="title_activity_feed">FeedActivity</string>
+    <string name="not_logged_in">Not Logged In</string>
+    <string name="ridestatus">Are you complete your this ride?</string>
+    <string name="complete">Yes, Completed</string>
+    <string name="cancelled">No, Cancelled</string>
+    <string name="title_activity_maps2">Map</string>
+
+</resources>

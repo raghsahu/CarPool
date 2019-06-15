@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.fortin.carpool.SendRequest"
+    tools:showIn="@layout/activity_send_request"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <TextView android:id="@+id/pick"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text=" Pick Up Point"
+            android:textColor="@color/txtcolordark"
+            android:textSize="18dp"
+            android:padding="3dp"/>
+
+        <TextView android:id="@+id/drop"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text=" Drop Point"
+            android:textColor="@color/txtcolordark"
+            android:textSize="18dp"
+            android:padding="3dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView android:layout_weight="0.6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="No of Seats:"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:textColor="@color/txtcolordark"/>
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+                <ImageView android:id="@+id/ivdec"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/minues"/>
+                <TextView android:id="@+id/txtseat"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/txtcolordark"
+                    android:textStyle="bold"
+                    android:padding="3dp"/>
+                <ImageView android:id="@+id/ivinc"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/plus"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText android:id="@+id/etcmt"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittext_border"
+            android:minLines="3"
+            android:maxLines="5"
+            android:hint="Enter Comment (optional)"
+            android:textColor="@color/txtcolordark"
+            android:textColorHint="@color/txtcolordark"
+            android:gravity="top"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/btnrequest"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:text="Send Request"
+        android:textColor="@color/btntxtcolor"
+        android:background="@drawable/btn"/>
+
+</LinearLayout>
